@@ -5,7 +5,7 @@ import reviewReducer from "./reducers/reviewReducer";
 
 const rootReducer = combineReducers({
   brewery: breweryReducer,
-  reviewReducer: reviewReducer,
+  review: reviewReducer,
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
