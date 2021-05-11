@@ -1,7 +1,7 @@
-export const getBrewery = () => {
-  return dispatch => {
-    fetch('http://localhost:3001/breweries')
-    .then(res => res.json())
-    .then((data) => console.log(data))
-  }
-}
+export const getBreweries = () => {
+  return (dispatch) => {
+    fetch("http://localhost:3001/breweries")
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  };
+};

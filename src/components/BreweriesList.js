@@ -1,8 +1,15 @@
 import React, { Component } from "react";
 import { getBreweries } from "../redux/actions/breweryActions";
+import {getOpenBreweries} from '../redux/actions/breweryApiAction'
 import { connect } from "react-redux";
 
 class BreweriesList extends Component {
+  componentDidMount() {
+    this.props.getOpenBreweries();
+  }
+
+  
+
   render() {
     return (
       <div>
@@ -18,4 +25,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(BreweriesList);
+export default connect(mapStateToProps, { getOpenBreweries })(BreweriesList);
