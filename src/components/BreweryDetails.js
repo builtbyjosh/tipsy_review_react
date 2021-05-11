@@ -2,9 +2,8 @@ import React from 'react';
 
 const BreweryDetails = ({brewery}) => {
   return (
-    <div on>
+    <div>
       <p>{brewery.name}</p>
-      <p>{brewery.website_url}</p>
     </div>
   );
 }

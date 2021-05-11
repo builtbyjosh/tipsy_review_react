@@ -1,12 +1,14 @@
 import React from "react";
+import BreweryDetails from "./BreweryDetails";
+import Link from "./Link";
 
-export default function BreweriesListItem({ brewery }) {
+const  BreweriesListItem = ({ brewery }) => {
   return (
-    <div>
-      <p>{brewery.name}</p>
-    </div>
-  );
+    <a href={`/breweries/${brewery.id}`}>{brewery.name}</a>
+  )
 }
+
+export default BreweriesListItem
 
 // address_2: null
 // address_3: null
