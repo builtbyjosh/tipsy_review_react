@@ -1,6 +1,6 @@
 import React from "react";
 import BreweryDetails from "./BreweryDetails";
-import Link from "./Link";
+
 
 const  BreweriesListItem = ({ brewery }) => {
   return (
