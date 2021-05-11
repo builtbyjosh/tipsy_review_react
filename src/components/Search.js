@@ -23,6 +23,7 @@ class Search extends Component {
             value={this.state.query}
             onChange={this.handleChange}
           />
+          <button type="submit">Search</button>
       </div>
     );
   }
