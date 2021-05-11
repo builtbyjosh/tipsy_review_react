@@ -7,3 +7,12 @@ export const getOpenBreweries = (query = "dog") => {
       );
   };
 };
+
+export const createOpenBrewery = (newBreweryData) => {
+  return (dispatch) => {
+    fetch("http://localhost:3001/breweries", {
+      method: 'POST',
+      body: JSON.stringify({brewery: newBreweryData})
+    })
+  }
+}
