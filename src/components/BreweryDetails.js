@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { getBrewery } from "../redux/actions/breweryActions";
-import ReviewDetails from "./ReviewDetails";
+import ReviewDetails from "./ReviewListItem";
 
 class BreweryDetails extends Component {
   componentDidMount = () => {

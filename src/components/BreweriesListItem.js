@@ -1,6 +1,4 @@
 import React from "react";
-import BreweryDetails from "./BreweryDetails";
-
 
 const  BreweriesListItem = ({ brewery }) => {
   return (
