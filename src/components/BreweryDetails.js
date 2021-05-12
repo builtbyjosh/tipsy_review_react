@@ -9,23 +9,15 @@ class BreweryDetails extends Component {
   };
 
   render() {
-    const brewery = this.props.brewery;
-
-    const renderReviews = this.props.brewery.reviews.map((review) => {
-      <ReviewDetails review={review} />;
-    });
-
     return (
       <div>
-        <p>{brewery.name}</p>
-        <p>{brewery.address}</p>
+        <p>{this.props.brewery.name}</p>
+        <p>{this.props.brewery.address}</p>
         <p>
-          {brewery.city}, {brewery.state}
+          {this.props.brewery.city}, {this.props.brewery.state}
         </p>
-        <div>
-          <p>Current Reviews:</p>
-          <div>{renderReviews}</div>
-        </div>
+        <p>Current Reviews:</p>
+        
       </div>
     );
   }
